@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+  	<link href="css/form.css" type="text/css" rel="stylesheet"/>
+    <link href="fonts/pt-sans-fontfacekit/ptsans_italic_macroman/stylesheet.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+  	<div class="container">
+  			<form class="form-inline" action="" method="post" enctype="multipart/form-data">
+  				<input type="hidden" name="token" value="" />
+  				<div class="row">
+  				
+  					<div class="titre">
+            			<h2>À propos de vous</h2>
+          			</div>
+  					<div class="form-group col-sm-4">
+  						<label for="name">Nom <span class="star">*</span></label>
+  						<span id="helpBlock" class="help-block">Il peut s'agir d'un pseudo.</span>
+  						<input type="text" id="name" name="name" placeholder="Votre nom d'utilisateur" class="form-control"required />
+  					</div>
+  					<div class="form-group col-sm-4">
+  						<label for="email">Email <span class="star">*</span></label>
+  						<span id="helpBlock" class="help-block">Veillez à bien mettre une adresse valide.</span>
+  						<input type="email" id="email" name="email" placeholder="martin.dupont@blah.com" class="form-control" required />
+  					</div>
+  					<div class="form-group col-sm-4">
+  						<label for="birthday">Date de naissance </label>
+  						<span id="helpBlock" class="help-block">Facultatif.</span>
+  						<input type="date" id="birthday" name="birthday" placeholder="aaaa/mm/jj" class="form-control" />
+  					</div>
+  				</div>
+
+				<div class="row">
+  					<div class="titre">
+            			<h2>Cinéma</h2>
+          			</div>
+  					<div class="form-group col-sm-4">
+  						<div>
+     						<label>Quels genres de films aimez-vous ?</label>
+		          			<span id="helpBlock" class="help-block control-label">Vous pouvez choisir plusieurs genres.</span>
+		     			</div>
+
+		     			<div>
+		     				<input type="checkbox" id="genre_1" name="genre[]" value="1" />
+		          			<label>Romance</label> <br />
+		     				<input type="checkbox" id="genre_2" name="genre[]" value="2" />
+		          			<label>Horreur</label> <br />
+		          			<input type="checkbox" id="genre_3" name="genre[]" value="3" />
+		          			<label>Aventure</label> <br />
+		          			<input type="checkbox" id="genre_4" name="genre[]" value="4" />
+		          			<label>Action</label> <br />
+		          			<input type="checkbox" id="genre_5" name="genre[]" value="5" />
+		          			<label>Comédie</label> <br />
+		     				<input type="checkbox" id="genre_6" name="genre[]" value="6" />
+		          			<label>Historique</label> <br />
+		          			<input type="checkbox" id="genre_7" name="genre[]" value="7" />
+		          			<label>Science-Fiction</label> <br />
+		          			<input type="checkbox" id="genre_8" name="genre[]" value="8" />
+		          			<label>Autre</label> <br />
+		     			</div>
+		     			<div>
+		     				<label>Veuillez préciser :</label>
+		     				<input type="text" id="othergenre" name="othergenre" />
+		     			</div>
+  					</div>
+  					<div class="form-group col-sm-4">
+  						<label for="nbfilms">Combien de films regardez-vous par mois, environ ?</label>
+  						<span id="helpBlock" class="help-block">
+  						Toutes plateformes confondues (cinéma, télévision, Internet...)
+  						</span>
+  						<div>
+     						<select name="nbfilms" id="nbfilms">
+     							<option value="">Aucun</option>
+     							<option value="1">Entre 0 et 5</option>
+     							<option value="2">Entre 5 et 10</option>
+     							<option value="3">Entre 10 et 15</option>
+     							<option value="4">Plus de 15</option>
+     						</select>
+     		 			</div>
+  					</div>
+  					</div>
+  					<div class="row">
+  					<div class="form-group col-sm-6">
+  						<label for="favactor" class="col-sm-6 control-label">Quel est votre acteur préféré ?</label>
+  						<input  class="col-sm-6 form-control" type="text" id="favactor" name="favactor" placeholder="Robert Downey Jr" />
+  					</div>
+  					<div class="form-group col-sm-6">
+  						<label for="favactress"  class="col-sm-6 control-label">Quelle est votre actrice préférée ?</label>
+  						<input type="text" id="favactress" name="favactress" placeholder="Sharon Stone"  class="col-sm-6 form-control" />
+  					</div>
+  					<div class="form-group col-sm-6">
+  						<label for="favdir"  class="col-sm-6 control-label">Quel.le est votre réalisateur/trice préféré.e ?</label>
+  						<input type="text" id="favdir" name="favdir" placeholder="Sam Taylor-Johnson"  class="col-sm-6 form-control" />
+  					</div>
+  					<div class="form-group col-sm-6">
+  						<label for="favcomp"  class="col-sm-6 control-label">Quel.le est votre compositeur/trice préféré.e ?</label>
+  						<input type="text" id="favcomp" name="favcomp" placeholder="John Williams"  class="col-sm-6 form-control" />
+  					</div>
+  					</div>
+  				</div>
+  				
+  				<div class="row">
+  					<button type="button" class="btn btn-primary">Valider</button>
+  				</div>
+
+  			</form>
+  		
+  	</div>
+  </body>
+</html>
