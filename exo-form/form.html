@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  	<link href="css/form.css" type="text/css" rel="stylesheet"/>
+    <title>C'est très le formulaire</title>
+  </head>
+  <body>
+  	<form action="" method="post" enctype="multipart/form-data">
+  		<input type="hidden" name="token" value="" />
+  		<div>
+  			<label for="firstname">Prénom <span class="star">*</span></label>
+  		</div>
+  		<div>
+  			<input type="text" id="firstname" name="firstname" value="" placeholder="Votre prénom" required />
+  		</div>
+  		<div>
+  			<label for="lastname">Nom <span class="star">*</span></label>
+  		</div>
+  		<div>
+  			<input type="text" id="lastname" name="lastname" value="" placeholder="Votre nom" required />
+  		</div>
+  		<div>
+  			<label for="email">Email</label>
+  		</div>
+  		<div>
+  			<input type="email" id="email" name="email" value="" placeholder="Votre email" />
+   		</div>
+   		<div>
+  			<label for="cats">Nombre de <span class="bold">chats</span></label>
+  		</div>
+  		<div>
+  			<input type="number" id="cats" name="cats" value="" placeholder="Vos chats" disabled />
+   		</div>
+   		<div>
+  			<label for="birthday">Date de naissance</label>
+  		</div>
+  		<div>
+  			<input type="date" id="birthday" name="birthday" value="21/06/17" placeholder="jj/mm/aa" readonly />
+   		</div>
+   		<div>
+  			<label for="password">Mot de passe</label>
+  		</div>
+  		<div>
+  			<input type="password" id="password" name="password1" value="" placeholder="Votre mot de passe" />
+  			<input type="password" id="password" name="password2" value="" placeholder="Votre mot de passe" />
+   		</div>
+
+   		<div>
+  			<label for="avatar">Avatar</label>
+  		</div>
+  		<div>
+  			<input type="file" id="avatar" name="avatar"  />
+   		</div>
+   		<div>
+  			<label for="files">Fichiers</label>
+  		</div>
+  		<div>
+  			<input type="file" id="files" name="files[]" multiple="" />
+   		</div>
+   		<div>
+   			<label>Mangez-vous des fruits ?</label>
+   		</div>
+   		<div>
+   			<label>Pomme<input type="checkbox" id="fruit_1" name="fruits[]" value="1"
+   			/></label> <br />
+   			<label>Raisin<input type="checkbox" id="fruit_2" name="fruits[]" value="2"
+   			/></label> <br />
+   			<label>Durian<input type="checkbox" id="fruit_3" name="fruits[]" value="3"
+   			/></label> <br />
+   		</div>
+   		<div>
+   			<label>Quel est votre légume préféré ?</label>
+   		</div>
+   		<div>
+   			<label>Concombre<input type="radio" id="vegetable_1" name="vegetable" value="1"
+   			/></label> <br />
+   			<label>Aubergine<input type="radio" id="vegetable_2" name="vegetable" value="2"
+   			/></label> <br />
+   			<label>Tomate<input type="radio" id="vegetable_3" name="vegetable" value="3"
+   			/></label> <br />
+   			<label>Aucun<input type="radio" id="vegetable_0" name="vegetable" value="2"
+   			/></label> <br />
+
+   		</div>
+   		<div>
+   			<label for="color">Quelle est votre couleur préférée ?</label>
+   		</div>
+   		<div>
+   			<select name="color" id="color">
+   				<option value="">Aucune</option>
+   				<option value="1">Rouge</option>
+   				<option value="2">Vert</option>
+   				<option value="3">Bleu</option>
+   				<option selected value="4">Octarine</option>
+   				<option value="5">Obi-wan Kenobi</option>
+
+   			</select>
+   		</div>
+   		<div>
+   			<label for="heroines">Quelles sont vos super héroines préférées?</label>
+   		</div>
+   		<div>
+   			<select id="heroines" name="heroines[]" multiple="" size="5">
+   				<option value="">Aucune</option>
+   				<option value="1">Diana</option>
+   				<option value="2">Natasha</option>
+   				<option selected value="3">America</option>
+   				<option selected value="4">Jessica</option>
+   				<option value="5">Yoda</option>
+
+   			</select>
+   		</div>
+   		<div>
+   			<label for="who_are_you">Qui êtes-vous ?</label>
+   		</div>
+   		<div>
+   			<textarea id="who_are_you" name="who_are_you">Je suis très désappointé</textarea>
+   		</div>
+   
+  		<div>
+  			<input type="submit" value="Valider" />
+  		</div>
+  	</form>
+
+  </body>
+</html>
