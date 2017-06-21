@@ -12,137 +12,181 @@
   <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        colonne 1
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        colonne 2
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        colonne 3
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        colonne 4
-      </div>
-   </div>
-  </div>
-
-
   	<form action="" method="post" enctype="multipart/form-data">
   		<input type="hidden" name="token" value="" />
-  		<div>
-  			<label for="firstname">Prénom <span class="star">*</span></label>
-  		</div>
-  		<div>
-  			<input type="text" id="firstname" name="firstname" value="" placeholder="Votre prénom" required />
-  		</div>
-  		<div>
-  			<label for="lastname">Nom <span class="star">*</span></label>
-  		</div>
-  		<div>
-  			<input type="text" id="lastname" name="lastname" value="" placeholder="Votre nom" required />
-  		</div>
-  		<div>
-  			<label for="email">Email</label>
-  		</div>
-  		<div>
-  			<input type="email" id="email" name="email" value="" placeholder="Votre email" />
-   		</div>
-   		<div>
-  			<label for="cats">Nombre de <span class="bold">chats</span></label>
-  		</div>
-  		<div>
-  			<input type="number" id="cats" name="cats" value="" placeholder="Vos chats" disabled />
-   		</div>
-   		<div>
-  			<label for="birthday">Date de naissance</label>
-  		</div>
-  		<div>
-  			<input type="date" id="birthday" name="birthday" value="21/06/17" placeholder="jj/mm/aa" readonly />
-   		</div>
-   		<div>
-  			<label for="password">Mot de passe</label>
-  		</div>
-  		<div>
-  			<input type="password" id="password" name="password1" value="" placeholder="Votre mot de passe" />
-  			<input type="password" id="password" name="password2" value="" placeholder="Votre mot de passe" />
-   		</div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="titre">
+              <h2>Etat Civil</h2>
+            </div>
+  		    <div class="form-group">
+    			<label for="firstname">Prénom <span class="star">*</span></label>
+    		</div>
+    		<div>
+    			<input class="form-control" type="text" id="firstname" name="firstname" value="" placeholder="Votre prénom" required />
+          <span id="helpBlock" class="help-block">Vous avez bien un prénom, non ?</span>
+    		</div>
+    		<div class="form-group">
+    			<label for="lastname">Nom <span class="star">*</span></label>
+    		</div>
+    		<div>
+    			<input type="text" id="lastname" name="lastname" value="" placeholder="Votre nom" required />
+          <span id="helpBlock" class="help-block">Et le nom qui va avec...</span>
+    		</div>
+           <div class="form-group">
+          <label for="nickname">Surnom/Pseudonyme</label>
+        </div>
+        <div>
+          <input class="form-control" type="text" id="nickname" name="nickname" value="" placeholder="Votre surnom" />
+          <span id="helpBlock" class="help-block">On sait bien que sur Internet, personne ne sait que vous êtes un chien.</span>
+        </div>
+        <div class="form-group">
+          <label for="middlename">Second prénom</label>
+        </div>
+        <div>
+          <input type="text" id="middlename" name="middlename" value="" placeholder="Votre second prénom" />
+          <span id="helpBlock" class="help-block">Sortez vos plus beaux prénoms à la mode en 1875.</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" value="" placeholder="Votre email" />
+          <span id="helpBlock" class="help-block">Faut bien qu'on ait le droit de vous spammer !</span>
+        </div>
+        <div class="form-group">
+          <label for="birthday">Date de naissance</label>
+        </div>
+        <div>
+          <input type="date" id="birthday" name="birthday" placeholder="jj/mm/aa" />
+          <span id="helpBlock" class="help-block">Histoire de vous proposer des offres tout en vous rappelant que vous vous rapprochez chaque année un peu plus de la mort.</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="titre">
+            <h2>Mieux vous connaître</h2>
+          </div>
+    		<div class="form-group">
+    			<label for="games">Nombre de jeux sur Steam</label>
+    		</div>
+    		<div>
+    			<input type="number" id="games" name="games" value="" placeholder="Vos jeux" />
+          <span id="helpBlock" class="help-block">Parce que le vrai jeu de Steam, c'est de collectionner les jeux sans jamais y jouer.</span>
+     		</div>
+     		<div class="form-group">
+    			<label for="cats">Nombre de chats <span class="star">*</span></label>
+    		</div>
+    		<div>
+    			<input type="number" id="cats" name="cats" value="" placeholder="Vos chats" required />
+          <span id="helpBlock" class="help-block">Vers la domination mondiale des <span class="strike">démons...</span> chats ! </span>
+     		</div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="titre">
+            <h2>Administration</h2>
+          </div>
+     		<div class="form-group">
+    			<label for="password">Mot de passe</label>
+          <span id="helpBlock" class="help-block">Prière d'avoir un mot de passe de 15 caractères avec au moins une minuscule, une majuscule, un chiffre, un caractère spécial et une emoji.</span>
+    		</div>
+    		<div>
+    			<input type="password" id="password" name="password1" value="" placeholder="Votre mot de passe" />
+    			<input type="password" id="password" name="password2" value="" placeholder="Votre mot de passe" />
+     		</div>
 
-   		<div>
-  			<label for="avatar">Avatar</label>
-  		</div>
-  		<div>
-  			<input type="file" id="avatar" name="avatar"  />
-   		</div>
-   		<div>
-  			<label for="files">Fichiers</label>
-  		</div>
-  		<div>
-  			<input type="file" id="files" name="files[]" multiple="" />
-   		</div>
-   		<div>
-   			<label>Mangez-vous des fruits ?</label>
-   		</div>
-   		<div>
-   			<label>Pomme<input type="checkbox" id="fruit_1" name="fruits[]" value="1"
-   			/></label> <br />
-   			<label>Raisin<input type="checkbox" id="fruit_2" name="fruits[]" value="2"
-   			/></label> <br />
-   			<label>Durian<input type="checkbox" id="fruit_3" name="fruits[]" value="3"
-   			/></label> <br />
-   		</div>
-   		<div>
-   			<label>Quel est votre légume préféré ?</label>
-   		</div>
-   		<div>
-   			<label>Concombre<input type="radio" id="vegetable_1" name="vegetable" value="1"
-   			/></label> <br />
-   			<label>Aubergine<input type="radio" id="vegetable_2" name="vegetable" value="2"
-   			/></label> <br />
-   			<label>Tomate<input type="radio" id="vegetable_3" name="vegetable" value="3"
-   			/></label> <br />
-   			<label>Aucun<input type="radio" id="vegetable_0" name="vegetable" value="2"
-   			/></label> <br />
+     		<div class="form-group">
+    			<label for="avatar">Avatar</label>
+    		</div>
+    		<div>
+    			<input type="file" id="avatar" name="avatar"  />
+          <span id="helpBlock" class="help-block">12Ko maximum, débrouillez-vous.</span>
+     		</div>
+     		<div class="form-group">
+    			<label for="files">Fichiers</label>
+    		</div>
+    		<div>
+    			<input type="file" id="files" name="files[]" multiple="" />
+          <span id="helpBlock" class="help-block">Votre rapport sera rédigé en LaTeX uniquement.</span>
+     		</div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="titre">
+            <h2>Test de personnalité</h2>
+          </div>
+     		<div class="form-group">
+     			<label>Quels sont les fruits exotiques que vous connaissez ?</label>
+          <span id="helpBlock" class="help-block">Si vous n'en connaissez aucun, voyagez un peu plus.</span>
+     		</div>
+     		<div>
+     			<label>Mangoustan<input type="checkbox" id="fruit_1" name="fruits[]" value="1"
+     			/></label> <br />
+     			<label>Girembelle<input type="checkbox" id="fruit_2" name="fruits[]" value="2"
+     			/></label> <br />
+     			<label>Durian<input type="checkbox" id="fruit_3" name="fruits[]" value="3"
+     			/></label>
+     		</div>
+     		<div class="form-group">
+     			<label>Team Captain America ou Team Iron Man ?</label>
+          <span id="helpBlock" class="help-block">Ce sera décisif pour notre équipe de recrutement.</span>
+     		</div>
+     		<div>
+     			<label>Freedom !<input type="radio" id="team_1" name="team" value="1"
+     			/></label> <br />
+     			<label>Les accords de Sokovie sont importants !<input type="radio" id="team_2" name="team" value="2"
+     			/></label> <br />
+     			<label>Je m'en fous, je préfère Deadpool. <input type="radio" id="team_3" name="team" value="3"
+     			/></label> <br />
+     			<label>Je m'en fiche, je préfère DC Comics.<input type="radio" id="team_4" name="team" value="4"
+     			/></label> <br />
+          <label>Je suis Suisse/sse.<input type="radio" id="team_5" name="team" value="5"
+          /></label>
+         <!--  Team 1 : Team Captain America
+          Team 2 : Team Iron Man
+          Team 3 : Votes blancs
+          Team 4 : Votes nuls
+          Team 5 : Abstentionnistes -->
 
-   		</div>
-   		<div>
-   			<label for="color">Quelle est votre couleur préférée ?</label>
-   		</div>
-   		<div>
-   			<select name="color" id="color">
-   				<option value="">Aucune</option>
-   				<option value="1">Rouge</option>
-   				<option value="2">Vert</option>
-   				<option value="3">Bleu</option>
-   				<option selected value="4">Octarine</option>
-   				<option value="5">Obi-wan Kenobi</option>
+     		</div>
+     		<div class="form-group">
+     			<label for="color">Quelle est votre couleur préférée ?</label>
+          <span id="helpBlock" class="help-block">Attention, il y a des pièges.</span>
+     		</div>
+     		<div>
+     			<select name="color" id="color">
+     				<option value="">Aucune</option>
+     				<option value="1">Rouge</option>
+     				<option value="2">Vert</option>
+     				<option value="3">Bleu</option>
+     				<option value="4">Octarine</option>
+     				<option value="5">RAINBOW</option>
 
-   			</select>
-   		</div>
-   		<div>
-   			<label for="heroines">Quelles sont vos super héroines préférées?</label>
-   		</div>
-   		<div>
-   			<select id="heroines" name="heroines[]" multiple="" size="5">
-   				<option value="">Aucune</option>
-   				<option value="1">Diana</option>
-   				<option value="2">Natasha</option>
-   				<option selected value="3">America</option>
-   				<option selected value="4">Jessica</option>
-   				<option value="5">Yoda</option>
+     			</select>
+     		</div>
+     		<div class="form-group">
+     			<label for="heroines">Quelles sont vos super héroines préférées?</label>
+          <span id="helpBlock" class="help-block">Trouvez l'intruse.</span>
+     		</div>
+     		<div>
+     			<select id="heroines" name="heroines[]" multiple="" size="5">
+     				<option value="">Aucune</option>
+     				<option value="1">Diana</option>
+     				<option value="2">Natasha</option>
+     				<option value="3">America</option>
+     				<option value="4">Jessica</option>
+     				<option value="5">Yoda</option>
 
-   			</select>
-   		</div>
-   		<div>
-   			<label for="who_are_you">Qui êtes-vous ?</label>
-   		</div>
-   		<div>
-   			<textarea id="who_are_you" name="who_are_you">Je suis très désappointé</textarea>
-   		</div>
-   
-  		<div>
-  			<input type="submit" value="Valider" />
+     			</select>
+     		</div>
+     		<div class="form-group">
+     			<label for="who_are_you">Qui êtes-vous ?</label>
+          <span id="helpBlock" class="help-block">Parlez-nous de vous, de vos couleurs de sous-vêtements favorites, de vos exploits en post-it art, de vos colliers de nouilles...</span>
+     		</div>
+     		<div>
+     			<textarea id="who_are_you" name="who_are_you">Je suis une mite en pullover</textarea>
+     		</div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <button type="submit" class="btn-info btn-lg">Je valide !</button>
   		</div>
   	</form>
     <script src="vendor/jQuery/jquery-3.2.1.min.js"> 
