@@ -1,0 +1,11 @@
+.photo {
+	background-color: navajowhite;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	width:100%;
+}
+
+.col-md-12 {
+	color: red;
+}
